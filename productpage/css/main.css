@@ -1841,16 +1841,39 @@ a:link {
     font-weight: 500;
 }
 
+.payment-option {
+    display: flex;
+    flex-direction: row;
+}
+
+.payment-option:before,
+.payment-option:after {
+    content: "";
+    flex: 1 1;
+    border-bottom: 1px solid;
+    margin: auto;
+}
+
+.payment-option:before {
+    margin-right: 10px
+}
+
+.payme:after {
+    margin-left: 10px
+}
+
 
 /************************************************Gaurav******************************/
 
 .hr {
+    width: 100%;
     border: 1px solid #e0e0e0;
     margin: 0;
     padding: 0;
 }
 
-.product-img-container {
+.product-img-container,
+.cart-product-img-container {
     width: 120px;
     height: 120px;
     overflow: hidden;
@@ -1971,6 +1994,136 @@ a:link {
 
 .registration-sumbit {
     font-size: 16px;
+}
+
+.get-quote-btn {
+    font-size: 1.5em;
+}
+
+#shippingOption {
+    display: none;
+}
+
+.price::before {
+    content: "$";
+    margin-right: 3px;
+    color: #989898;
+}
+
+
+/* `````````````` */
+
+.form-card {
+    margin-left: 20px;
+    margin-right: 20px
+}
+
+.form-card input,
+.form-card textarea {
+    padding: 10px 15px 5px 15px;
+    border: none;
+    border: 1px solid lightgrey;
+    border-radius: 6px;
+    margin-bottom: 25px;
+    margin-top: 2px;
+    width: 100%;
+    box-sizing: border-box;
+    font-family: arial;
+    color: #2C3E50;
+    font-size: 14px;
+    letter-spacing: 1px
+}
+
+.form-card input:focus,
+.form-card textarea:focus {
+    -moz-box-shadow: 0px 0px 0px 1.5px skyblue !important;
+    -webkit-box-shadow: 0px 0px 0px 1.5px skyblue !important;
+    box-shadow: 0px 0px 0px 1.5px skyblue !important;
+    border: 1px solid #304FFE;
+    outline-width: 0
+}
+
+.input-group {
+    position: relative;
+    width: 100%;
+    overflow: hidden
+}
+
+.input-group input {
+    position: relative;
+    height: 80px;
+    margin-left: 1px;
+    margin-right: 1px;
+    border-radius: 6px;
+    padding-top: 30px;
+    padding-left: 25px
+}
+
+.input-group label {
+    position: absolute;
+    height: 24px;
+    background: none;
+    border-radius: 6px;
+    line-height: 48px;
+    font-size: 15px;
+    color: gray;
+    width: 100%;
+    font-weight: 100;
+    padding-left: 25px
+}
+
+input:focus+label {
+    color: #304FFE
+}
+
+.btn-pay {
+    background-color: rgb(106, 130, 142);
+    height: 60px;
+    color: #ffffff !important;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-pay:hover {
+    background-color: rgb(246, 191, 66);
+}
+
+.shipping-option-radio.selected {
+    color: rgb(246, 191, 66);
+}
+
+.cart-item-holder {
+    width: auto;
+}
+
+.cart-item-scroll {
+    background-color: rgb(243, 243, 243);
+    overflow-x: scroll;
+}
+
+.product-piece {
+    background-color: #494949;
+    color: white;
+    position: relative;
+    top: -7px;
+    left: -24px;
+    border-radius: 50%;
+    width: 20px;
+    height: 20px;
+    font-size: 12px;
+    padding-left: 6px;
+    padding-bottom: 9px;
+}
+
+.cart-product-container {
+    border-radius: 10px;
+    background-color: #fff;
+    box-shadow: rgb(189, 187, 187) 0px 0px 10px;
+}
+
+.default-shipping-container {
+    border-radius: 10px;
+    background-color: rgb(243, 243, 243);
 }
 
 
@@ -2472,6 +2625,11 @@ a:link {
     }
     .remove-product {
         justify-content: flex-end;
+    }
+    .form-card {
+        margin-left: 0px;
+        margin-right: 0px;
+        padding: 0px;
     }
 }
 

@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Your Cart</title>
+    <title>Payment</title>
 </head>
 
 <body>
@@ -34,7 +34,7 @@
                     </div>
                 </div>
                 <a href="#"><i class="fas fa-heart fa-2x"></i></a>
-                <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                <a href="cart.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
             </div>
             <div class="offcanvas__links">
                 <a href="registration.html">Login</a>
@@ -50,7 +50,7 @@
         </div>
         <div class="offcanvas_header_menu">
             <ul>
-                <li><a href="../frontpage.html">Cashmere</a></li>
+                <li><a href="./index.html">Cashmere</a></li>
                 <li class="offcanvas-li" id="offcanvas-women-li">
                     <a href="#">Women <i class="fas fa-caret-right" id="rotate-icon"></i
             ></a>
@@ -387,7 +387,7 @@
                         <div class="header__top__right">
                             <div class="header__top__links">
                                 <a href="#">Order Tracker</a>
-                                <a href="registration.html">Login</a>
+                                <a href="#">Login</a>
                                 <a href="#">My Account</a>
                             </div>
                         </div>
@@ -445,7 +445,7 @@
                         </div>
                     </div>
                     <a href="#"><i class="fas fa-heart fa-2x"></i></a>
-                    <a href="#"><i class="fas fa-shopping-cart fa-2x"></i></a>
+                    <a href="cart.html"><i class="fas fa-shopping-cart fa-2x"></i></a>
                 </div>
             </div>
             <!-- Sub menu Section Started -->
@@ -1020,196 +1020,208 @@
     <!-- Header section End -->
 
     <!-- Main section -->
-    <div class="container-fluid main-container">
-        <div class="container my-5 text-center">
-            <h3 class="page-heading mb-3  fw-bold heading">My Cart</h3>
-            <div class="cart-info-container">
-                <div class="row">
-                    <div class="col-lg-8 col-12">
-                        <div class="product-description-container">
-                            <div class="hr my-4"></div>
-                            <div class="product-description-child  d-sm-flex justify-content-between align-content-center">
-                                <div class="product-img-container mx-auto">
-                                    <img src="./images/men/DSC04415.jpg" class="product-img" alt="product" srcset="">
-                                </div>
-                                <div class="product-description-content d-flex mt-sm-0 mt-4 justify-content-between flex-grow-1">
-                                    <h5 class="product-name font-weight-bold my-auto d-flex flex-column align-content-start">
-                                        Product Name
-                                        <p class="product-price my-2 d-flex justify-content-lg-start price">100</p>
+    <div class="container-fluid my-5">
+        <div class="container-fluid pt-3">
+            <!-- Choose different shipping option -->
+            <div class="row">
+                <div class="col-lg-5 col-md-5 col-12 mx-auto d-flex justify-content-center">
+                    <div class="col-12">
+                        <h3 class="text-center">Shipping Quotes</h3>
+                        <div class="row d-flex flex-column align-content-center justify-content-center mt-3">
+                            <div class="col-lg-8 col-12 mt-2">
+                                <div class="card text-left">
+                                    <div class="card-body">
 
-                                    </h5>
-                                    <p class="product-quantity">
-                                        <div class="quantity-control" data-quantity="">
-                                            <button class="quantity-btn" data-quantity-minus=""><i class="bi bi-plus"></i></button>
-                                            <input type="number" class="quantity-input" data-quantity-target="" value="1" step="1" min="1" max="" name="quantity">
-                                            <button class="quantity-btn" data-quantity-plus=""><i class="bi bi-dash"></i></i></button>
+                                        <div class="form-check d-flex justify-content-between">
+                                            <p>DHL option 1</p>
+                                            <p class="price">100</p>
+                                            <div>
+                                                <input type="radio" class="form-check-input shipping-option-radio" name="optradio" checked>
+
+                                            </div>
+
+                                        </div>
+                                        <div class="form-check d-flex justify-content-between">
+                                            <p>DHL option 2</p>
+                                            <p class="price">100</p>
+                                            <div>
+                                                <input type="radio" class="form-check-input shipping-option-radio" name="optradio">
+                                            </div>
                                         </div>
 
-                                    </p>
-                                    <p class="product-total-price my-auto price">100</p>
+                                    </div>
                                 </div>
-                                <div class="btn remove-product"><i class="bi bi-trash-fill"></i></div>
                             </div>
-                            <div class="hr my-4"></div>
-
                         </div>
-                        <h5 class="d-flex font-weight-bold justify-content-start">Total Item: <span class="ml-4" id="totalCartItem">1</span></h5>
                     </div>
-                    <div class="col-lg-4 col-12 mt-4 mt-md-0 px-5">
-                        <div class="product-summary-container">
-                            <div class="summary-card">
-                                <div class="card-heading p-2">Summary</div>
-                                <div class="border-container p-2">
-                                    <div class="summay-container mt-3">
-                                        <div class="summary-item d-flex justify-content-between">
-                                            <p class="text-black">Total Items:</p>
-                                            <p id="totalCartItem" class="text-black">1</p>
-                                        </div>
-                                    </div>
-                                    <div class="summay-container mt-3">
-                                        <div class="summary-item d-flex justify-content-between">
-                                            <p class="text-black">Total Price:</p>
-                                            <p class="text-black">$100</p>
-                                        </div>
-                                    </div>
-                                    <div class="summay-container mt-3">
-                                        <div class="summary-item d-flex justify-content-between">
-                                            <p class="text-black">Shipping Cost:</p>
-                                            <p class="text-black">$10</p>
-                                        </div>
-                                    </div>
-                                    <div class="summary-card-footer p-2">
-                                        <div class="total-price-container d-flex p-0 justify-content-between">
-                                            <p class="text-black">Grand Total:</p>
-                                            <p class="text-black">$110</p>
-                                        </div>
 
-                                    </div>
+                </div>
+                <div class="col-lg-7 col-md-7 col-12 mt-md-0 mt-4 px-md-4 d-flex justify-content-center">
+                    <div class="col-lg-6 col-md-7 col-12 ">
+                        <div class="d-flex justify-content-center">
+                            <!-- Invoice summary  -->
+                            <h4 class="">Invoice Summary</h4>
+                        </div>
+                        <div class="card mt-3 text-left">
+                            <div class="card-body">
+                                <div class="items-summary d-flex justify-content-between">
+
+                                    <p class="">Cart Total:</p>
+                                    <!-- Cart total for cart.html -->
+                                    <p class="totalCartItem price">200</p>
                                 </div>
-
+                                <div class="cart-total-container d-flex justify-content-between">
+                                    <p class="">Shipping Cost:</p>
+                                    <!-- shipping cost after user selection -->
+                                    <p class="totalCartPrice price">30.1</p>
+                                </div>
+                                <div class="cart-total-container d-flex justify-content-between">
+                                    <p class="">Tax:</p>
+                                    <!-- Calculate tax as per country -->
+                                    <p class="totalCartPrice price">10.1</p>
+                                </div>
+                                <div class="hr"></div>
+                                <div class="cart-total-container d-flex justify-content-between mt-2">
+                                    <!-- Grand total for all -->
+                                    <p class="font-weight-bold">Total:</p>
+                                    <p class="totalCartPrice price font-weight-bold">230.2</p>
+                                </div>
                             </div>
                         </div>
-
-                        <a href="checkout.html" class="btn secondary-btn p-3 mt-4">Checkout<i class="bi bi-arrow-right ml-2"></i></a>
+                        <!-- Different payment option  -->
+                        <!-- Option for pay using card -->
+                        <div class="row justify-content-center mb-3 mt-3 px-3">
+                            <div class="col-md-12 d-flex"> <button class="btn btn-pay placeicon"><i class="bi mr-2 bi-credit-card"></i>Pay with card</button> </div>
+                        </div>
+                        <div class="row d-flex justify-content-center">
+                            <div class="payment-option">
+                                <p>OR</p>
+                            </div>
+                        </div>
+                        <!-- Option for pay using paypal -->
+                        <div class="row paypal-container justify-content-center px-3">
+                            <div class="col-md-12"> <button class="btn btn-pay placeicon"><i class="bi mr-2 bi-paypal"></i>Pay with Paypal</button> </div>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+
     <!-- Footer Section Start -->
-    <section class="footer" id="footer">
-        <div class="container">
-            <div class="row py-2">
-                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
+    <section class="footer " id="footer ">
+        <div class="container ">
+            <div class="row py-2 ">
+                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3 ">
                     <h4>Help</h4>
-                    <div class="footer-list my-2">
-                        <ul class="navbar-nav">
+                    <div class="footer-list my-2 ">
+                        <ul class="navbar-nav ">
                             <li>
-                                <a href="#">Cashmere Care</a>
+                                <a href="# ">Cashmere Care</a>
                             </li>
                             <li>
-                                <a href="#">Pilling Remover</a>
+                                <a href="# ">Pilling Remover</a>
                             </li>
                             <li>
-                                <a href="#">Product & Services</a>
+                                <a href="# ">Product & Services</a>
                             </li>
                             <li>
-                                <a href="#">Terms & Conditions</a>
+                                <a href="# ">Terms & Conditions</a>
                             </li>
                             <li>
-                                <a href="#">Size Guide</a>
+                                <a href="# ">Size Guide</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 px-4 py-3">
+                <div class="col-lg-3 col-md-6 col-sm-12 px-4 py-3 ">
                     <h4>Kanchan Cashmere</h4>
-                    <div class="footer-list my-2">
-                        <ul class="navbar-nav">
+                    <div class="footer-list my-2 ">
+                        <ul class="navbar-nav ">
                             <li>
-                                <a href="#">About us</a>
+                                <a href="# ">About us</a>
                             </li>
                             <li>
-                                <a href="#">Our Natural Yarns</a>
+                                <a href="# ">Our Natural Yarns</a>
                             </li>
                             <li>
-                                <a href="#">Quality Knitwear</a>
+                                <a href="# ">Quality Knitwear</a>
                             </li>
                             <li>
-                                <a href="#">Production of Cashmere</a>
+                                <a href="# ">Production of Cashmere</a>
                             </li>
                             <li>
-                                <a href="#">Future</a>
+                                <a href="# ">Future</a>
                             </li>
                             <li>
-                                <a href="#">Contact Us</a>
+                                <a href="# ">Contact Us</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
+                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3 ">
                     <h4>Business</h4>
-                    <div class="footer-list my-2">
-                        <ul class="navbar-nav">
+                    <div class="footer-list my-2 ">
+                        <ul class="navbar-nav ">
                             <li>
-                                <a href="#">Color Card Request</a>
+                                <a href="# ">Color Card Request</a>
                             </li>
                             <li>
-                                <a href="#">Catologue Request</a>
+                                <a href="# ">Catologue Request</a>
                             </li>
                             <li>
-                                <a href="#">Custom Made</a>
+                                <a href="# ">Custom Made</a>
                             </li>
                             <li>
-                                <a href="#">Made To Order</a>
+                                <a href="# ">Made To Order</a>
                             </li>
                             <li>
-                                <a href="#">Private Label</a>
+                                <a href="# ">Private Label</a>
                             </li>
                             <li>
-                                <a href="#">B2B</a>
+                                <a href="# ">B2B</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
+                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3 ">
                     <h4>Track</h4>
-                    <div class="footer-list my-2">
-                        <ul class="navbar-nav">
+                    <div class="footer-list my-2 ">
+                        <ul class="navbar-nav ">
                             <li>
-                                <a href="#">Track My Order</a>
+                                <a href="# ">Track My Order</a>
                             </li>
                             <li>
-                                <a href="#">Order History</a>
+                                <a href="# ">Order History</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 px-3 py-3">
+                <div class="col-lg-3 col-md-6 col-sm-12 px-3 py-3 ">
                     <h4>Help Center</h4>
-                    <p class="footer-p">
+                    <p class="footer-p ">
                         Want to know more about our Yarn Quality,size and color?Take a look at help center,where you can find all the info you need quickly
                     </p>
-                    <div class="help-center my-4">
-                        <a href="">Visit our Help Center</a>
+                    <div class="help-center my-4 ">
+                        <a href=" ">Visit our Help Center</a>
                     </div>
-                    <div class="shipping-partner my-4">
+                    <div class="shipping-partner my-4 ">
                         <h4>Shipping Partner</h4>
-                        <div class="images">
-                            <img src="./images/partner/partner1.png" class="w-100" alt="" />
+                        <div class="images ">
+                            <img src="./images/partner/partner1.png " class="w-100 " alt=" " />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="last-footer py-1 d-flex justify-content-around" style="border-top: 1px solid rgb(131, 131, 131)">
-                <div class="row">
-                    <div class="col-lg-8 col-md-6">
-                        <h6 class="my-2">
+            <div class="last-footer py-1 d-flex justify-content-around " style="border-top: 1px solid rgb(131, 131, 131) ">
+                <div class="row ">
+                    <div class="col-lg-8 col-md-6 ">
+                        <h6 class="my-2 ">
                             Copyrights © 2012-2022, Kanchan Cashmere Industries Pvt. Ltd. All rights reserved.
                         </h6>
                     </div>
-                    <div class="col-lg-4 col-md-6">
-                        <img src="./images/partner/payment.png" class="w-100 h-100" style="object-fit: fill" alt="" />
+                    <div class="col-lg-4 col-md-6 ">
+                        <img src="./images/partner/payment.png " class="w-100 h-100 " style="object-fit: fill " alt=" " />
                     </div>
                 </div>
             </div>
@@ -1217,11 +1229,11 @@
     </section>
     <!-- Footer Section End -->
     <!-- Linking JQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
     <!-- Linking Popper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
     <!-- Linking Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
     <!-- Linking Custom JS -->
     <script src="./js/script.js"></script>
 </body>
