@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Payment</title>
+    <title>Category</title>
 </head>
 
 <body>
@@ -387,7 +387,7 @@
                         <div class="header__top__right">
                             <div class="header__top__links">
                                 <a href="#">Order Tracker</a>
-                                <a href="registration.html">Login</a>
+                                <a href="#">Login</a>
                                 <a href="#">My Account</a>
                             </div>
                         </div>
@@ -1020,208 +1020,286 @@
     <!-- Header section End -->
 
     <!-- Main section -->
-    <div class="container-fluid my-5">
-        <div class="container-fluid pt-3">
-            <!-- Choose different shipping option -->
+    <div class="container-fluid">
+        <div class="category-main-container my-5 pl-2">
             <div class="row">
-                <div class="col-lg-5 col-md-5 col-12 mx-auto d-flex justify-content-center">
-                    <div class="col-12">
-                        <h3 class="text-center">Shipping Quotes</h3>
-                        <div class="row d-flex flex-column align-content-center justify-content-center mt-3">
-                            <div class="col-lg-8 col-12 mt-2">
-                                <div class="card text-left">
-                                    <div class="card-body">
+                <div class="col-md-2 col-12 px-0 pl-2">
+                    <button id="toggleDiv" class="navbar-toggler filter-btn" type="button">
+                        <i class="bi bi-filter"></i>
+                        <span class="navbar-toggler-icon"></span>
+                      </button>
+                    <div class="filter-container d-md-block" id="filter-container">
+                        <div class="category-type mt-4">
+                            <div class="sub-category mb-3">
+                                <h5 class="mb-3 category-filter-heading">Category</h5>
+                                <div class="form-group mb-1">
+                                    <input type="checkbox" id="categoryTops">
+                                    <label class="category-filter-label ml-3" for="categoryTops">Tops</label>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <input type="checkbox" id="categoryPants">
+                                    <label class="category-filter-label ml-3" for="categoryPants">Pants</label>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <input type="checkbox" id="categoryBags">
+                                    <label class="category-filter-label ml-3" for="colorBags">Bags</label>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <input type="checkbox" id="categoryShirt">
+                                    <label class="category-filter-label ml-3" for="colorShirt">Shirt</label>
+                                </div>
+                            </div>
+                            <div class="color-category mb-3">
+                                <h5 class="mb-3 category-filter-heading">Color</h5>
+                                <div class="form-group mb-1">
+                                    <input type="checkbox" id="colorBlack">
+                                    <label class="category-filter-label ml-3" for="colorBlack">Black</label>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <input type="checkbox" id="colorRed">
+                                    <label class="category-filter-label ml-3" for="colorRed">Red</label>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <input type="checkbox" id="colorWhite">
+                                    <label class="category-filter-label ml-3" for="colorWhite">White</label>
+                                </div>
+                                <div class="form-group mb-1">
+                                    <input type="checkbox" id="colorPink">
+                                    <label class="category-filter-label ml-3" for="colorPink">Pink</label>
+                                </div>
+                            </div>
+                            <div class="price-category">
+                                <h5 class="mb-3 category-filter-heading">Price</h5>
+                                <div class="form-group d-flex align-content-center pr-2">
+                                    <input class="price-input p-1" type="text" placeholder="Min">
+                                    <p class="mx-2 display-5">-</p>
+                                    <input class="price-input p-1" type="text" placeholder="Max">
+                                    <button class="btn ml-2 p-1 price-adjust-btn"><i class="bi bi-caret-right-fill"></i></button>
+                                </div>
 
-                                        <div class="form-check d-flex justify-content-between">
-                                            <p>DHL option 1</p>
-                                            <p class="price">100</p>
-                                            <div>
-                                                <input type="radio" class="form-check-input shipping-option-radio" name="optradio" checked>
+                            </div>
+                        </div>
+                        <div class="btn-wrapper">
+                            <button class="btn reset-btn mt-3">Reset</button>
 
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-10 col-12 mt-4 mt-md-0">
+                    <div class="category-view-container pl-2">
+                        <div class="top-name-container d-flex justify-content-between">
+                            <h4 class="category-heading mb-4 pl-3">Category Name</h4>
+                            <select class="mr-4 p-md-2 p-0" id="arrangeOption" name="arrangeOption">
+                                <option value="bestMatch">Sort by best match</option>
+                                <option value="highPrice">Sort by Higher price</option>
+                                <option value="lowPrice">Sort by Lower price</option>
+                              </select>
+                        </div>
+                        <!-- Recomendation Section Start -->
+                        <div class="recomendation mt-4">
+                            <div class="container-fluid py-2">
+                                <div class="men-product active" id="men-product">
+                                    <div class="row">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6">
+                                            <div class="product__item">
+                                                <div class="category__item__pic">
+                                                    <img src="./images/men/men3.jpg" class="w-100 h-100 img-fluid" alt="" />
+                                                </div>
+                                                <div class="product__item__text">
+                                                    <h6>Piqué Biker Jacket</h6>
+                                                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                                                    <h5>$67.24</h5>
+                                                </div>
                                             </div>
-
                                         </div>
-                                        <div class="form-check d-flex justify-content-between">
-                                            <p>DHL option 2</p>
-                                            <p class="price">100</p>
-                                            <div>
-                                                <input type="radio" class="form-check-input shipping-option-radio" name="optradio">
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix women">
+                                            <div class="product__item">
+                                                <div class="category__item__pic">
+                                                    <img src="./images/men/DSC04405.jpg" class="w-100 h-100 img-fluid" alt="" />
+                                                </div>
+                                                <div class="product__item__text">
+                                                    <h6>Piqué Biker Jacket</h6>
+                                                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                                                    <h5>$67.24</h5>
+                                                </div>
                                             </div>
                                         </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
+                                            <div class="product__item sale">
+                                                <div class="category__item__pic">
 
+                                                    <img src="./images/men/DSC04410.jpg" class="w-100 h-100 img-fluid" alt="" />
+                                                </div>
+                                                <div class="product__item__text">
+                                                    <h6>Multi-pocket Chest Bag</h6>
+                                                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                                                    <h5>$43.48</h5>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="col-lg-3 col-md-6 col-sm-6 col-md-6 col-sm-6 mix men">
+                                            <div class="product__item sale">
+                                                <div class="category__item__pic">
+
+                                                    <img src="./images/men/DSC04415.jpg" class="w-100 h-100 img-fluid" alt="" />
+                                                </div>
+                                                <div class="product__item__text">
+                                                    <h6>Multi-pocket Chest Bag</h6>
+                                                    <a href="#" class="add-cart">+ Add To Cart</a>
+
+                                                    <h5>$43.48</h5>
+                                                </div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
-                        </div>
-                    </div>
-
-                </div>
-                <div class="col-lg-7 col-md-7 col-12 mt-md-0 mt-4 px-md-4 d-flex justify-content-center">
-                    <div class="col-lg-6 col-md-7 col-12 ">
-                        <div class="d-flex justify-content-center">
-                            <!-- Invoice summary  -->
-                            <h4 class="">Invoice Summary</h4>
-                        </div>
-                        <div class="card mt-3 text-left">
-                            <div class="card-body">
-                                <div class="items-summary d-flex justify-content-between">
-
-                                    <p class="">Cart Total:</p>
-                                    <!-- Cart total for cart.html -->
-                                    <p class="totalCartItem price">200</p>
-                                </div>
-                                <div class="cart-total-container d-flex justify-content-between">
-                                    <p class="">Shipping Cost:</p>
-                                    <!-- shipping cost after user selection -->
-                                    <p class="totalCartPrice price">30.1</p>
-                                </div>
-                                <div class="cart-total-container d-flex justify-content-between">
-                                    <p class="">Tax:</p>
-                                    <!-- Calculate tax as per country -->
-                                    <p class="totalCartPrice price">10.1</p>
-                                </div>
-                                <div class="hr"></div>
-                                <div class="cart-total-container d-flex justify-content-between mt-2">
-                                    <!-- Grand total for all -->
-                                    <p class="font-weight-bold">Total:</p>
-                                    <p class="totalCartPrice price font-weight-bold">230.2</p>
-                                </div>
-                            </div>
-                        </div>
-                        <!-- Different payment option  -->
-                        <!-- Option for pay using card -->
-                        <div class="row justify-content-center mb-3 mt-3 px-3">
-                            <div class="col-md-12 d-flex"> <button class="btn btn-pay placeicon"><i class="bi mr-2 bi-credit-card"></i>Pay with card</button> </div>
-                        </div>
-                        <div class="row d-flex justify-content-center">
-                            <div class="payment-option">
-                                <p>OR</p>
-                            </div>
-                        </div>
-                        <!-- Option for pay using paypal -->
-                        <div class="row paypal-container justify-content-center px-3">
-                            <div class="col-md-12"> <button class="btn btn-pay placeicon"><i class="bi mr-2 bi-paypal"></i>Pay with Paypal</button> </div>
                         </div>
                     </div>
                 </div>
             </div>
         </div>
     </div>
+    <div class="pagination-container d-flex justify-content-end mb-4 mr-5">
+        <nav aria-label="Page navigation example">
+            <ul class="pagination">
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Previous">
+                        <span aria-hidden="true">&laquo;</span>
+                        <span class="sr-only">Previous</span>
+                    </a>
+                </li>
+                <li class="page-item"><a class="page-link" href="#">1</a></li>
+                <li class="page-item"><a class="page-link" href="#">2</a></li>
+                <li class="page-item"><a class="page-link" href="#">3</a></li>
+                <li class="page-item">
+                    <a class="page-link" href="#" aria-label="Next">
+                        <span aria-hidden="true">&raquo;</span>
+                        <span class="sr-only">Next</span>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </div>
+
 
     <!-- Footer Section Start -->
-    <section class="footer " id="footer ">
-        <div class="container ">
-            <div class="row py-2 ">
-                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3 ">
+    <section class="footer" id="footer">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
                     <h4>Help</h4>
-                    <div class="footer-list my-2 ">
-                        <ul class="navbar-nav ">
+                    <div class="footer-list my-2">
+                        <ul class="navbar-nav">
                             <li>
-                                <a href="# ">Cashmere Care</a>
+                                <a href="#">Cashmere Care</a>
                             </li>
                             <li>
-                                <a href="# ">Pilling Remover</a>
+                                <a href="#">Pilling Remover</a>
                             </li>
                             <li>
-                                <a href="# ">Product & Services</a>
+                                <a href="#">Product & Services</a>
                             </li>
                             <li>
-                                <a href="# ">Terms & Conditions</a>
+                                <a href="#">Terms & Conditions</a>
                             </li>
                             <li>
-                                <a href="# ">Size Guide</a>
+                                <a href="#">Size Guide</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 px-4 py-3 ">
+                <div class="col-lg-3 col-md-6 col-sm-12 px-4 py-3">
                     <h4>Kanchan Cashmere</h4>
-                    <div class="footer-list my-2 ">
-                        <ul class="navbar-nav ">
+                    <div class="footer-list my-2">
+                        <ul class="navbar-nav">
                             <li>
-                                <a href="# ">About us</a>
+                                <a href="#">About us</a>
                             </li>
                             <li>
-                                <a href="# ">Our Natural Yarns</a>
+                                <a href="#">Our Natural Yarns</a>
                             </li>
                             <li>
-                                <a href="# ">Quality Knitwear</a>
+                                <a href="#">Quality Knitwear</a>
                             </li>
                             <li>
-                                <a href="# ">Production of Cashmere</a>
+                                <a href="#">Production of Cashmere</a>
                             </li>
                             <li>
-                                <a href="# ">Future</a>
+                                <a href="#">Future</a>
                             </li>
                             <li>
-                                <a href="# ">Contact Us</a>
+                                <a href="#">Contact Us</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3 ">
+                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
                     <h4>Business</h4>
-                    <div class="footer-list my-2 ">
-                        <ul class="navbar-nav ">
+                    <div class="footer-list my-2">
+                        <ul class="navbar-nav">
                             <li>
-                                <a href="# ">Color Card Request</a>
+                                <a href="#">Color Card Request</a>
                             </li>
                             <li>
-                                <a href="# ">Catologue Request</a>
+                                <a href="#">Catologue Request</a>
                             </li>
                             <li>
-                                <a href="# ">Custom Made</a>
+                                <a href="#">Custom Made</a>
                             </li>
                             <li>
-                                <a href="# ">Made To Order</a>
+                                <a href="#">Made To Order</a>
                             </li>
                             <li>
-                                <a href="# ">Private Label</a>
+                                <a href="#">Private Label</a>
                             </li>
                             <li>
-                                <a href="# ">B2B</a>
+                                <a href="#">B2B</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3 ">
+                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
                     <h4>Track</h4>
-                    <div class="footer-list my-2 ">
-                        <ul class="navbar-nav ">
+                    <div class="footer-list my-2">
+                        <ul class="navbar-nav">
                             <li>
-                                <a href="# ">Track My Order</a>
+                                <a href="#">Track My Order</a>
                             </li>
                             <li>
-                                <a href="# ">Order History</a>
+                                <a href="#">Order History</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 px-3 py-3 ">
+                <div class="col-lg-3 col-md-6 col-sm-12 px-3 py-3">
                     <h4>Help Center</h4>
-                    <p class="footer-p ">
+                    <p class="footer-p">
                         Want to know more about our Yarn Quality,size and color?Take a look at help center,where you can find all the info you need quickly
                     </p>
-                    <div class="help-center my-4 ">
-                        <a href=" ">Visit our Help Center</a>
+                    <div class="help-center my-4">
+                        <a href="">Visit our Help Center</a>
                     </div>
-                    <div class="shipping-partner my-4 ">
+                    <div class="shipping-partner my-4">
                         <h4>Shipping Partner</h4>
-                        <div class="images ">
-                            <img src="./images/partner/partner1.png " class="w-100 " alt=" " />
+                        <div class="images">
+                            <img src="./images/partner/partner1.png" class="w-100" alt="" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="last-footer py-1 d-flex justify-content-around " style="border-top: 1px solid rgb(131, 131, 131) ">
-                <div class="row ">
-                    <div class="col-lg-8 col-md-6 ">
-                        <h6 class="my-2 ">
+            <div class="last-footer py-1 d-flex justify-content-around" style="border-top: 1px solid rgb(131, 131, 131)">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                        <h6 class="my-2">
                             Copyrights © 2012-2022, Kanchan Cashmere Industries Pvt. Ltd. All rights reserved.
                         </h6>
                     </div>
-                    <div class="col-lg-4 col-md-6 ">
-                        <img src="./images/partner/payment.png " class="w-100 h-100 " style="object-fit: fill " alt=" " />
+                    <div class="col-lg-4 col-md-6">
+                        <img src="./images/partner/payment.png" class="w-100 h-100" style="object-fit: fill" alt="" />
                     </div>
                 </div>
             </div>
@@ -1229,11 +1307,11 @@
     </section>
     <!-- Footer Section End -->
     <!-- Linking JQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Linking Popper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- Linking Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- Linking Custom JS -->
     <script src="./js/script.js"></script>
 </body>

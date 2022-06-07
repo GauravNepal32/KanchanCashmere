@@ -1972,13 +1972,13 @@ a:link {
 }
 
 .form-container {
-    background-color: #e5e2e2;
+    background-color: rgb(243, 243, 243);
     border-radius: 10px;
     width: 370px;
 }
 
 .register-field {
-    background-color: #e5e2e2;
+    background-color: rgb(243, 243, 243);
     border: none;
     border-bottom: 2px solid #959494;
     outline: none;
@@ -2008,88 +2008,6 @@ a:link {
     content: "$";
     margin-right: 3px;
     color: #989898;
-}
-
-
-/* `````````````` */
-
-.form-card {
-    margin-left: 20px;
-    margin-right: 20px
-}
-
-.form-card input,
-.form-card textarea {
-    padding: 10px 15px 5px 15px;
-    border: none;
-    border: 1px solid lightgrey;
-    border-radius: 6px;
-    margin-bottom: 25px;
-    margin-top: 2px;
-    width: 100%;
-    box-sizing: border-box;
-    font-family: arial;
-    color: #2C3E50;
-    font-size: 14px;
-    letter-spacing: 1px
-}
-
-.form-card input:focus,
-.form-card textarea:focus {
-    -moz-box-shadow: 0px 0px 0px 1.5px skyblue !important;
-    -webkit-box-shadow: 0px 0px 0px 1.5px skyblue !important;
-    box-shadow: 0px 0px 0px 1.5px skyblue !important;
-    border: 1px solid #304FFE;
-    outline-width: 0
-}
-
-.input-group {
-    position: relative;
-    width: 100%;
-    overflow: hidden
-}
-
-.input-group input {
-    position: relative;
-    height: 80px;
-    margin-left: 1px;
-    margin-right: 1px;
-    border-radius: 6px;
-    padding-top: 30px;
-    padding-left: 25px
-}
-
-.input-group label {
-    position: absolute;
-    height: 24px;
-    background: none;
-    border-radius: 6px;
-    line-height: 48px;
-    font-size: 15px;
-    color: gray;
-    width: 100%;
-    font-weight: 100;
-    padding-left: 25px
-}
-
-input:focus+label {
-    color: #304FFE
-}
-
-.btn-pay {
-    background-color: rgb(106, 130, 142);
-    height: 60px;
-    color: #ffffff !important;
-    font-weight: bold;
-    width: 100%;
-}
-
-.btn-pay:hover {
-    background-color: rgb(246, 191, 66);
-}
-
-.shipping-option-radio.selected {
-    color: rgb(246, 191, 66);
 }
 
 .cart-item-holder {
@@ -2123,6 +2041,124 @@ input:focus+label {
 
 .default-shipping-container {
     border-radius: 10px;
+    background-color: rgb(243, 243, 243);
+}
+
+.login-container {
+    background-color: rgb(243, 243, 243);
+    border-radius: 20px;
+}
+
+.login-btn {
+    font-size: 1.7em;
+}
+
+.optional-container-text {
+    position: relative;
+    top: -14px;
+    left: 120px;
+    background-color: rgb(243, 243, 243);
+    z-index: 100;
+    width: fit-content;
+}
+
+.login-field {
+    background-color: rgb(243, 243, 243);
+    border: none;
+    border-bottom: 2px solid #959494;
+    outline: none;
+    border-radius: 0%;
+}
+
+.login-field:focus {
+    background-color: transparent;
+    border-color: inherit;
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.breadcrumb-container {
+    background-color: white;
+}
+
+.category-view-container {
+    border-left: 2px solid #c3c0c0;
+}
+
+.category-filter-label {
+    font-family: "Futura", sans-serif;
+    font-size: 14px;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #989898;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+.category-filter-heading {
+    font-family: "Futura", sans-serif;
+    font-size: 16px;
+    line-height: 1.7;
+    font-weight: 500;
+    color: #989898;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+    text-shadow: rgba(0, 0, 0, 0.01) 0 0 1px;
+}
+
+.btn-pay {
+    background-color: rgb(106, 130, 142);
+    height: 60px;
+    color: #ffffff !important;
+    font-weight: bold;
+    width: 100%;
+}
+
+.btn-pay:hover {
+    background-color: rgb(246, 191, 66);
+}
+
+.price-input {
+    width: 50%;
+}
+
+.price-adjust-btn {
+    background-color: #e88a1e;
+    border: none;
+    color: white;
+    border-radius: 5px;
+}
+
+.category__item__pic {
+    width: 100%;
+    height: 250px;
+    position: relative;
+    background-position: center center;
+}
+
+.reset-btn {
+    background-color: #e88a1e;
+    color: white;
+    font-weight: 500;
+}
+
+.img-fluid {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+}
+
+.filter-btn {
+    display: none;
+    background-color: #e88a1e;
+    width: 45px;
+    height: 35px;
+    color: white;
+    font-weight: bold;
+}
+
+.profile-sub-container {
     background-color: rgb(243, 243, 243);
 }
 
@@ -2514,6 +2550,15 @@ input:focus+label {
     .men-cart {
         height: 749px;
     }
+    .filter-btn {
+        display: flex;
+    }
+    .category-view-container {
+        border: none;
+    }
+    .filter-container {
+        display: none;
+    }
 }
 
 @media only screen and (max-width: 730px) {
@@ -2682,6 +2727,13 @@ input:focus+label {
         font-weight: 600;
         color: #fe4c50;
         margin-top: 2rem;
+    }
+    .category-heading {
+        font-size: 1.5em;
+    }
+    #arrangeOption {
+        width: 70px;
+        height: 30px;
     }
 }
 

@@ -388,6 +388,13 @@ $(document).ready(function() {
 });
 
 $(document).ready(function() {
+    $('#toggleDiv').click(function() {
+        $('#filter-container').toggle();
+    });
+});
+
+
+$(document).ready(function() {
 
     //For Card Number formatted input
     var cardNum = document.getElementById('cr_no');
