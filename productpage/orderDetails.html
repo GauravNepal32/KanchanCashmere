@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Check Out</title>
+    <title>My Profile</title>
 </head>
 
 <body>
@@ -387,7 +387,7 @@
                         <div class="header__top__right">
                             <div class="header__top__links">
                                 <a href="#">Order Tracker</a>
-                                <a href="registration.html">Login</a>
+                                <a href="login.html">Login</a>
                                 <a href="profile.html">My Account</a>
                             </div>
                         </div>
@@ -1020,318 +1020,221 @@
     <!-- Header section End -->
 
     <!-- Main section -->
-    <div class="container-fluid p-0 my-5">
-        <div class="container-fluid mx-auto">
-            <div class="row d-flex justify-content-center d-flex justify-content-center">
-                <!-- Shipping details form -->
-                <div class="col-lg-6 col-12 order-lg-0 px-md-5 px-4 order-1 mt-lg-0 mt-4">
-                    <div class="shipping-form-container">
-                        <div class="shipping-form-inner">
-                            <div class="h4 mb-3">Shipping Details</div>
-                            <form method="post">
-                                <div class="row my-3">
-                                    <div class="col-sm-6 col-12 mb-3 mb-sm-0">
-                                        <!-- First Name for shipping -->
-                                        <input type="text" class="form-control p-4" placeholder="First Name">
-                                    </div>
-                                    <div class="col-sm-6 col-12">
-                                        <!-- Last Name for shipping -->
-                                        <input type="text" class="form-control p-4" placeholder="Last Name">
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col">
-                                        <!-- Address of shipping -->
-                                        <input type="text" class="form-control p-4" placeholder=" Address ">
-                                    </div>
-                                </div>
-                                <div class="row mb-3 ">
-                                    <div class="col ">
-                                        <!-- Apartment number, suite number -->
-                                        <input type="text " class="form-control p-4 " placeholder="Apartment, suite, (optional) ">
-                                    </div>
-                                </div>
-                                <div class="row mb-3">
-                                    <div class="col-sm-4 col-6">
-                                        <!-- City for shipping -->
-                                        <input type="text " class="form-control p-4 " placeholder="City">
-                                    </div>
-                                    <div class="col-sm-4 col-6 mb-3 mb-sm-0">
-                                        <!-- State for shipping -->
-                                        <input type="text " class="form-control p-4 " placeholder="State">
-                                    </div>
-                                    <div class="col-sm-4 col-12">
-                                        <!-- Zip code for shipping -->
-                                        <input type="text " class="form-control p-4 " placeholder="Postal Code">
-                                    </div>
-                                </div>
-                                <div class="row mb-3 ">
-                                    <div class="col ">
-                                        <input type="text " class="form-control p-4 " placeholder="Country">
-                                    </div>
-                                </div>
-                                <div class="row mb-3 ">
-                                    <div class="col ">
-                                        <!-- Contact information for shipping -->
-                                        <input type="text " class="form-control p-4 " placeholder="Phone">
-                                    </div>
-                                </div>
-
-                            </form>
-                        </div>
-                        <div id="billingAddress" class="billing-address-info">
-                            <div class="row default-shipping-container mt-3 p-3">
-                                <div class="col-12 d-flex align-content-center justify-content-between">
-                                    <div class="deafult-billing-info">
-                                        <h4>Billing address same as shipping</h4>
-                                    </div>
-                                    <input type="radio" name="billAddress" id="billSaveAddress">
-                                </div>
-                            </div>
-                            <div class="row default-shipping-container mt-3 p-3">
-                                <div class="col-12 d-flex align-content-center justify-content-between">
-                                    <div class="deafult-shipping-info">
-                                        <h4>Set a new billing address</h4>
-                                    </div>
-                                    <input type="radio" name="billAddress" id="billNewAddress">
-
-                                </div>
-                            </div>
-                            <div id="newBillingAddress" style="display: none;" class="billing-form-inner mt-5">
-                                <!-- New Billing address form -->
-                                <form method="post">
-                                    <div class="row mb-3">
-                                        <div class="col-sm-6 col-12 mb-3 mb-sm-0">
-                                            <!-- First Name for billing -->
-                                            <input type="text" class="form-control p-4" placeholder="First Name">
-                                        </div>
-                                        <div class="col-sm-6 col-12">
-                                            <!-- Last Name for billing -->
-                                            <input type="text" class="form-control p-4" placeholder="Last Name">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col">
-                                            <!-- Address of billing -->
-                                            <input type="text" class="form-control p-4" placeholder=" Address ">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3 ">
-                                        <div class="col ">
-                                            <!-- Apartment number, suite number for billing -->
-                                            <input type="text " class="form-control p-4 " placeholder="Apartment, suite, (optional) ">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3">
-                                        <div class="col-sm-4 col-6">
-                                            <!-- City for shipping billing -->
-                                            <input type="text " class="form-control p-4 " placeholder="City">
-                                        </div>
-                                        <div class="col-sm-4 col-6 mb-3 mb-sm-0">
-                                            <!-- State for shipping -->
-                                            <input type="text " class="form-control p-4 " placeholder="State">
-                                        </div>
-                                        <div class="col-sm-4 col-12">
-                                            <!-- Zip code for shipping billing -->
-                                            <input type="text " class="form-control p-4 " placeholder="Postal Code">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3 ">
-                                        <div class="col ">
-                                            <input type="text " class="form-control p-4 " placeholder="Country">
-                                        </div>
-                                    </div>
-                                    <div class="row mb-3 ">
-                                        <div class="col ">
-                                            <!-- Contact information for billing -->
-                                            <input type="text " class="form-control p-4 " placeholder="Phone">
-                                        </div>
-                                    </div>
-
-                                </form>
-                            </div>
-                        </div>
-                        <div class="row mt-3 d-flex justify-content-center">
-                            <a href="payment.html" id="quoteBtn" onclick="quoteBtn()" class="btn primary-btn get-quote-btn mt-2">Get Quote<i class="bi ml-3 bi-arrow-right"></i></a>
-                        </div>
-                    </div>
+    <div class="container-fluid my-5">
+        <div class="container">
+            <h4 class="text-center">Order Details</h4>
+            <div class="order-number-container d-flex justify-content-between mt-5 p-2 profile-sub-container">
+                <div class="order-info-wrapper">
+                    <h5>Order <span class="order-number font-weight-bold">#0123</span></h5>
                 </div>
-                <div class="col-lg-6 col-12 px-md-0 px-0 order-lg-1 order-0">
-                    <div class="container d-flex flex-column align-content-center mx-auto">
-                        <div class="cart-item-view col-lg-10 col-12">
-                            <h4>Items in Cart</h4>
-                            <div class="checkout-item-lis my-4">
-                                <div class="cart-single-item mb-3 p-3 d-flex justify-content-between">
-                                    <div class="product-desciption-container">
-                                        <h5 class="font-weight-bold">Product Name</h5>
-                                        <p>Black / L</p>
-                                    </div>
-                                    <p class="item-total">2</p>
-                                    <p class="price">100</p>
-                                </div>
-                                <div class="cart-single-item mb-3 p-3 d-flex justify-content-between">
-                                    <div class="product-desciption-container">
-                                        <h5 class="font-weight-bold">Product Name</h5>
-                                        <p>Black / L</p>
-                                    </div>
-                                    <p class="item-total">2</p>
-                                    <p class="price">100</p>
-                                </div>
-                                <div class="cart-single-item mb-3 p-3 d-flex justify-content-between">
-                                    <div class="product-desciption-container">
-                                        <h5 class="font-weight-bold">Product Name</h5>
-                                        <p>Black / L</p>
+                <div class="order-total-wrapper">
+                    <h4>Total: <span class="order-total">$ 230.2</span></h4>
+                </div>
+            </div>
+            <div class="product-description-container">
+                <div class="hr my-4"></div>
+                <div class="product-description-child  d-sm-flex justify-content-between align-content-center">
+                    <div class="product-img-container mx-auto">
+                        <img src="./images/men/DSC04415.jpg" class="product-img" alt="product" srcset="">
+                    </div>
+                    <div class="product-description-content d-flex mt-sm-0 mt-4 justify-content-between flex-grow-1">
+                        <h5 class="product-name font-weight-bold my-auto d-flex flex-column align-content-start">
+                            Product Name
+                            <p class="product-price my-2 d-flex justify-content-lg-start price">100</p>
 
-                                    </div>
-                                    <p class="item-total">2</p>
-                                    <p class="price">100</p>
-                                </div>
+                        </h5>
+                        <p class="product-quantity my-auto">
+                            1
+                        </p>
+                        <p class="product-total-price my-auto price">100</p>
+                    </div>
+
+                </div>
+                <div class="hr my-4"></div>
+
+
+            </div>
+            <div class="order-details-bottom-container">
+                <div class="row d-flex justify-content-between">
+                    <div class="col-md-6 col-12 ml-md-2 p-3 profile-sub-container">
+                        <div class="shipping-details-container">
+                            <h6 class="font-weight-bold">
+                                Shipping Details
+                            </h6>
+                            <div class="shipping-address-container">
+                                <p class="orderReciverName mt-3">John Smith</p>
+                                <p class="order-shipping address">House 201,Los Angeles 90011, USA</p>
+                                <p class="order-shipping-contact">9821146218</p>
                             </div>
                         </div>
-                        <div class="col-lg-10 col-12">
-                            <div class="d-flex justify-content-between">
-                                <h4 class="">Cart Summary</h4>
-                                <!-- Go back to cart page -->
-                                <p class="text-underline">Change Items?</p>
+                        <div class="hr my-2"></div>
+                        <div class="billing-details-container">
+                            <h6 class="font-weight-bold">
+                                Billing Details
+                            </h6>
+                            <div class="shipping-address-container">
+                                <p class="orderReciverName mt-3">John Smith</p>
+                                <p class="order-shipping address">House 201,Los Angeles 90011, USA</p>
+                                <p class="order-shipping-contact">9821146218</p>
                             </div>
-                            <div class="card text-left">
+                        </div>
+
+                    </div>
+                    <div class="col-md-5 col-12 mx-md-2 p-3 profile-sub-container">
+                        <h6 class="font-weight-bold">
+                            Payment Summary
+                            <div class="card mt-3 text-left">
                                 <div class="card-body">
                                     <div class="items-summary d-flex justify-content-between">
-                                        <!-- Total items present in the cart -->
-                                        <p class="">Total Items:</p>
-                                        <p class="totalCartItem">2</p>
+
+                                        <p class="">Cart Total:</p>
+                                        <!-- Cart total for cart.html -->
+                                        <p class="totalCartItem price">200</p>
                                     </div>
                                     <div class="cart-total-container d-flex justify-content-between">
-                                        <!-- Total of the cart -->
-                                        <p class="">Cart Total:</p>
-                                        <p class="totalCartPrice price">2</p>
+                                        <p class="">Shipping Cost:</p>
+                                        <!-- shipping cost after user selection -->
+                                        <p class="totalCartPrice price">30.1</p>
+                                    </div>
+                                    <div class="cart-total-container d-flex justify-content-between">
+                                        <p class="">Tax:</p>
+                                        <!-- Calculate tax as per country -->
+                                        <p class="totalCartPrice price">10.1</p>
+                                    </div>
+                                    <div class="hr"></div>
+                                    <div class="cart-total-container d-flex justify-content-between mt-2">
+                                        <!-- Grand total for all -->
+                                        <p class="font-weight-bold">Total:</p>
+                                        <p class="totalCartPrice price font-weight-bold">230.2</p>
+                                    </div>
+                                    <div class="cart-payment-type">
+                                        <div class="hr my-2"></div>
+                                        <p class="payment-type">Paid with Card</p>
                                     </div>
                                 </div>
                             </div>
-                        </div>
+                        </h6>
                     </div>
-
                 </div>
             </div>
         </div>
-
-
     </div>
 
+
     <!-- Footer Section Start -->
-    <section class="footer " id="footer ">
-        <div class="container ">
-            <div class="row py-2 ">
-                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3 ">
+    <section class="footer" id="footer">
+        <div class="container">
+            <div class="row py-2">
+                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
                     <h4>Help</h4>
-                    <div class="footer-list my-2 ">
-                        <ul class="navbar-nav ">
+                    <div class="footer-list my-2">
+                        <ul class="navbar-nav">
                             <li>
-                                <a href="# ">Cashmere Care</a>
+                                <a href="#">Cashmere Care</a>
                             </li>
                             <li>
-                                <a href="# ">Pilling Remover</a>
+                                <a href="#">Pilling Remover</a>
                             </li>
                             <li>
-                                <a href="# ">Product & Services</a>
+                                <a href="#">Product & Services</a>
                             </li>
                             <li>
-                                <a href="# ">Terms & Conditions</a>
+                                <a href="#">Terms & Conditions</a>
                             </li>
                             <li>
-                                <a href="# ">Size Guide</a>
+                                <a href="#">Size Guide</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 px-4 py-3 ">
+                <div class="col-lg-3 col-md-6 col-sm-12 px-4 py-3">
                     <h4>Kanchan Cashmere</h4>
-                    <div class="footer-list my-2 ">
-                        <ul class="navbar-nav ">
+                    <div class="footer-list my-2">
+                        <ul class="navbar-nav">
                             <li>
-                                <a href="# ">About us</a>
+                                <a href="#">About us</a>
                             </li>
                             <li>
-                                <a href="# ">Our Natural Yarns</a>
+                                <a href="#">Our Natural Yarns</a>
                             </li>
                             <li>
-                                <a href="# ">Quality Knitwear</a>
+                                <a href="#">Quality Knitwear</a>
                             </li>
                             <li>
-                                <a href="# ">Production of Cashmere</a>
+                                <a href="#">Production of Cashmere</a>
                             </li>
                             <li>
-                                <a href="# ">Future</a>
+                                <a href="#">Future</a>
                             </li>
                             <li>
-                                <a href="# ">Contact Us</a>
+                                <a href="#">Contact Us</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3 ">
+                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
                     <h4>Business</h4>
-                    <div class="footer-list my-2 ">
-                        <ul class="navbar-nav ">
+                    <div class="footer-list my-2">
+                        <ul class="navbar-nav">
                             <li>
-                                <a href="# ">Color Card Request</a>
+                                <a href="#">Color Card Request</a>
                             </li>
                             <li>
-                                <a href="# ">Catologue Request</a>
+                                <a href="#">Catologue Request</a>
                             </li>
                             <li>
-                                <a href="# ">Custom Made</a>
+                                <a href="#">Custom Made</a>
                             </li>
                             <li>
-                                <a href="# ">Made To Order</a>
+                                <a href="#">Made To Order</a>
                             </li>
                             <li>
-                                <a href="# ">Private Label</a>
+                                <a href="#">Private Label</a>
                             </li>
                             <li>
-                                <a href="# ">B2B</a>
+                                <a href="#">B2B</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3 ">
+                <div class="col-lg-2 col-md-6 col-sm-12 px-4 py-3">
                     <h4>Track</h4>
-                    <div class="footer-list my-2 ">
-                        <ul class="navbar-nav ">
+                    <div class="footer-list my-2">
+                        <ul class="navbar-nav">
                             <li>
-                                <a href="# ">Track My Order</a>
+                                <a href="#">Track My Order</a>
                             </li>
                             <li>
-                                <a href="# ">Order History</a>
+                                <a href="#">Order History</a>
                             </li>
                         </ul>
                     </div>
                 </div>
-                <div class="col-lg-3 col-md-6 col-sm-12 px-3 py-3 ">
+                <div class="col-lg-3 col-md-6 col-sm-12 px-3 py-3">
                     <h4>Help Center</h4>
-                    <p class="footer-p ">
+                    <p class="footer-p">
                         Want to know more about our Yarn Quality,size and color?Take a look at help center,where you can find all the info you need quickly
                     </p>
-                    <div class="help-center my-4 ">
-                        <a href=" ">Visit our Help Center</a>
+                    <div class="help-center my-4">
+                        <a href="">Visit our Help Center</a>
                     </div>
-                    <div class="shipping-partner my-4 ">
+                    <div class="shipping-partner my-4">
                         <h4>Shipping Partner</h4>
-                        <div class="images ">
-                            <img src="./images/partner/partner1.png " class="w-100 " alt=" " />
+                        <div class="images">
+                            <img src="./images/partner/partner1.png" class="w-100" alt="" />
                         </div>
                     </div>
                 </div>
             </div>
-            <div class="last-footer py-1 d-flex justify-content-around " style="border-top: 1px solid rgb(131, 131, 131) ">
-                <div class="row ">
-                    <div class="col-lg-8 col-md-6 ">
-                        <h6 class="my-2 ">
+            <div class="last-footer py-1 d-flex justify-content-around" style="border-top: 1px solid rgb(131, 131, 131)">
+                <div class="row">
+                    <div class="col-lg-8 col-md-6">
+                        <h6 class="my-2">
                             Copyrights © 2012-2022, Kanchan Cashmere Industries Pvt. Ltd. All rights reserved.
                         </h6>
                     </div>
-                    <div class="col-lg-4 col-md-6 ">
-                        <img src="./images/partner/payment.png " class="w-100 h-100 " style="object-fit: fill " alt=" " />
+                    <div class="col-lg-4 col-md-6">
+                        <img src="./images/partner/payment.png" class="w-100 h-100" style="object-fit: fill" alt="" />
                     </div>
                 </div>
             </div>
@@ -1339,13 +1242,13 @@
     </section>
     <!-- Footer Section End -->
     <!-- Linking JQuery -->
-    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js " integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo " crossorigin="anonymous "></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <!-- Linking Popper JS -->
-    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js " integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49 " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.14.3/dist/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
     <!-- Linking Bootstrap js -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js " integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy " crossorigin="anonymous "></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.1.3/dist/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
     <!-- Linking Custom JS -->
-    <script src="./js/script.js "></script>
+    <script src="./js/script.js"></script>
 </body>
 
 </html>

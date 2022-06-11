@@ -1318,7 +1318,7 @@ a:link {
     width: 100%;
 }
 
-.form input {
+.homePage-contact input {
     width: 50%;
     padding: 20px 30px;
 }
@@ -2124,7 +2124,7 @@ a:link {
 }
 
 .price-adjust-btn {
-    background-color: #e88a1e;
+    background-color: #e53637;
     border: none;
     color: white;
     border-radius: 5px;
@@ -2138,7 +2138,7 @@ a:link {
 }
 
 .reset-btn {
-    background-color: #e88a1e;
+    background-color: #e53637;
     color: white;
     font-weight: 500;
 }
@@ -2151,7 +2151,7 @@ a:link {
 
 .filter-btn {
     display: none;
-    background-color: #e88a1e;
+    background-color: #e53637;
     width: 45px;
     height: 35px;
     color: white;
@@ -2161,6 +2161,294 @@ a:link {
 .profile-sub-container {
     background-color: rgb(243, 243, 243);
 }
+
+.bi-pencil-fill {
+    color: #000;
+}
+
+.bi-pencil-fill:hover {
+    color: #e53637;
+    cursor: pointer;
+}
+
+.checkout-item-list {
+    background-color: rgb(243, 243, 243);
+}
+
+.cart-single-item {
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: rgb(189, 187, 187) 0px 0px 10px;
+}
+
+.cart-item-view {
+    height: 200px;
+    overflow-y: scroll;
+}
+
+.pagination-circle {
+    border-radius: 50%;
+}
+
+.pagination {
+    padding: 0px 20px;
+}
+
+.page-item {
+    border-radius: 50%;
+}
+
+.page-item:first-child .page-link,
+.page-item:last-child .page-link {
+    margin-left: 0;
+    border-radius: 50%;
+}
+
+.page-link {
+    background-color: rgb(243, 243, 243);
+    border: none;
+    border-radius: 50%;
+    margin: 0px 3px;
+}
+
+.page-item:hover {
+    color: white;
+}
+
+.page-link:hover {
+    background-color: #e53637;
+    border-color: #e53637;
+    color: white;
+}
+
+.pagination .active .page-link {
+    background-color: #e53637;
+    border-color: #e53637;
+}
+
+.saveChangeBtn {
+    font-size: 18px;
+}
+
+.savePassword-btn {
+    font-size: 18px;
+}
+
+.faq-question-child {
+    border-radius: 20px;
+}
+
+.faq-toggle-btn {
+    background-color: rgb(243, 243, 243);
+}
+
+.rotate {
+    -moz-transition: all 2s linear;
+    -webkit-transition: all 2s linear;
+    transition: all 0.2s linear;
+}
+
+.rotate.down {
+    -ms-transform: rotate(90deg);
+    -moz-transform: rotate(90deg);
+    -webkit-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+.faq-container {}
+
+.faq {
+    background-color: rgb(243, 243, 243);
+    margin: 20px 0;
+    padding: 30px;
+    position: relative;
+    overflow: hidden;
+    transition: 0.3s ease;
+    border-radius: 20px;
+}
+
+.faq.active {
+    box-shadow: 0 3px 6px rgba(0, 0, 0, 0.1), 0 3px 6px rgba(0, 0, 0, 0.1);
+}
+
+.faq.active::before {
+    color: #3498db;
+    top: -10px;
+    left: -30px;
+    transform: rotateY(180deg);
+}
+
+.faq-title {
+    margin: 0 35px 0 0;
+    font-size: 19px;
+}
+
+.faq-text {
+    display: none;
+    margin: 30px 0 0;
+}
+
+.faq.active .faq-text {
+    display: block;
+}
+
+.faq-toggle {
+    background-color: transparent;
+    border: 0;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 16px;
+    padding: 0;
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    height: 30px;
+    width: 30px;
+}
+
+.faq-toggle:focus {
+    outline: 0;
+}
+
+.faq-toggle .bi-x {
+    display: none;
+}
+
+.faq.active .faq-toggle .bi-x {
+    color: #222;
+    display: block;
+}
+
+.faq.active .faq-toggle .bi-chevron-down {
+    display: none;
+}
+
+.image-wrapper {
+    max-height: 500px;
+}
+
+.contact-us-form .form-group .text-area {
+    resize: none;
+}
+
+.submit-btn {
+    background-color: #e53637;
+    color: white;
+}
+
+.contact-us-top-container {
+    background-color: rgb(243, 243, 243);
+}
+
+.contact-type-item {
+    background-color: rgb(243, 243, 243);
+    border-radius: 20px;
+    height: 350px;
+}
+
+.contact-type-container {
+    position: relative;
+    top: -60px;
+}
+
+.social-media-links a {
+    padding: 15px;
+    margin: 0px 10px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 50%;
+    color: #000;
+    font-size: 18px;
+}
+
+.social-media-links a:hover {
+    background-color: #e53637;
+    color: white;
+}
+
+.contact-form-wrapper {}
+
+.contact-form {
+    padding: 30px 40px;
+    background-color: #ffffff;
+    border-radius: 12px;
+    max-width: 400px;
+    z-index: 100;
+}
+
+.contact-form textarea {
+    resize: none;
+    border-radius: 20px;
+}
+
+.contact-form .form-input,
+.form-text-area {
+    background-color: rgb(243, 243, 243);
+    height: 50px;
+    padding-left: 16px;
+}
+
+.contact-form .form-text-area {
+    background-color: rgb(243, 243, 243);
+    height: auto;
+    padding-left: 16px;
+}
+
+.contact-form .form-control::placeholder {
+    color: rgb(243, 243, 243);
+    font-weight: 500;
+    opacity: 1;
+}
+
+.contact-form .form-control:-ms-input-placeholder {
+    color: rgb(243, 243, 243);
+    font-weight: 500;
+}
+
+.contact-form .form-control::-ms-input-placeholder {
+    color: #aeb4b9;
+    font-weight: 500;
+}
+
+.contact-form .form-control:focus {
+    border-color: #e53637;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.07), 0 0 8px #e53637;
+}
+
+.contact-form .title {
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+}
+
+.contact-form .description {
+    color: #aeb4b9;
+    font-size: 14px;
+    text-align: center;
+}
+
+.contact-form .submit-button-wrapper {
+    text-align: center;
+}
+
+.contact-form .submit-button-wrapper input {
+    border: none;
+    border-radius: 4px;
+    background-color: #e53637;
+    color: white;
+    text-transform: uppercase;
+    padding: 10px 60px;
+    font-weight: 500;
+    letter-spacing: 2px;
+}
+
+.contact-form .submit-button-wrapper input:hover {
+    background-color: #e53637;
+}
+
+.contact-subType-container {}
 
 
 /* **************************************************Responsive Media Query***************************************************************** */
@@ -2734,6 +3022,10 @@ a:link {
     #arrangeOption {
         width: 70px;
         height: 30px;
+    }
+    .faq-title {
+        margin: 0 35px 0 0;
+        font-size: 15px;
     }
 }
 
