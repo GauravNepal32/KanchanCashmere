@@ -2292,6 +2292,10 @@ a:link {
     display: block;
 }
 
+.faq-first .faq-text {
+    display: block;
+}
+
 .faq-toggle {
     background-color: transparent;
     border: 0;
@@ -2423,6 +2427,42 @@ a:link {
 
 .contact-top {
     background-color: rgb(243, 243, 243);
+}
+
+.mission-image {
+    height: 300px;
+}
+
+.past-container {
+    background-color: rgb(243, 243, 243);
+}
+
+.past-img-container {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+    object-fit: contain;
+}
+
+.past-img-content {
+    border-radius: 50%;
+}
+
+.fa-a {
+    font-size: 40px;
+}
+
+.stats-sub-container {
+    width: 150px;
+    height: 150px;
+    padding: 40px;
+    background-color: rgb(243, 243, 243);
+    border-radius: 50%;
+}
+
+.raw-material-img-container {
+    height: 250px;
+    object-fit: contain;
 }
 
 
